@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="skundapatrik.pozornatriky.Round1">
+
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#52DBFF">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:textColor="#000000"
+                android:id="@+id/score"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logo_round1"
+                android:src="@drawable/logo_round1"
+                android:layout_marginStart="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/trophy"
+                android:src="@drawable/trophy"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/score"
+                android:layout_marginEnd="7dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/game_logo"
+                android:id="@+id/game_logo"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Url trénink"
+                android:textColor="#000000"
+                android:id="@+id/text_round1"
+                android:layout_alignBaseline="@+id/score"
+                android:layout_alignBottom="@+id/score"
+                android:layout_toEndOf="@+id/logo_round1"
+                android:layout_marginStart="7dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Kolo 1"
+                android:textColor="#000000"
+                android:id="@+id/text_round1S"
+                android:layout_below="@+id/text_round1"
+                android:layout_alignStart="@+id/text_round1" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pozadie_help1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/obr_help1"
+                android:src="@drawable/pozadie_help"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="30dp"
+                android:paddingLeft="280dp"
+                android:paddingRight="60dp"
+                android:paddingTop="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Ahoj. Vítám tě v mé hře. Za chvíli tě čeká první kolo. V tomto kole budeš odpovídat zda jsou dány webové adresy bezpečné nebo ne. Postupně si vybírej jednotlivé webové okna a odpovídej ano nebo ne. Přeji ti hodně štěstí. Pro zahájení hry klikni na mě."
+                    android:id="@+id/textView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/volbaUrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nextto3"
+                android:src="@drawable/next_ic"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:id="@+id/imageButton"
+                android:src="@drawable/browser"
+                android:layout_marginEnd="37dp"
+                android:layout_alignTop="@+id/imageButton2"
+                android:layout_toStartOf="@+id/imageButton2" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:id="@+id/imageButton2"
+                android:src="@drawable/browser"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="29dp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:id="@+id/imageButton3"
+                android:src="@drawable/browser"
+                android:layout_alignTop="@+id/imageButton2"
+                android:layout_toEndOf="@+id/imageButton2"
+                android:layout_marginStart="37dp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:id="@+id/imageButton4"
+                android:src="@drawable/browser"
+                android:layout_alignTop="@+id/imageButton5"
+                android:layout_alignStart="@+id/imageButton" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:id="@+id/imageButton5"
+                android:src="@drawable/browser"
+                android:layout_below="@+id/imageButton2"
+                android:layout_alignStart="@+id/imageButton2"
+                android:layout_marginTop="22dp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:id="@+id/imageButton6"
+                android:src="@drawable/browser"
+                android:layout_alignTop="@+id/imageButton5"
+                android:layout_alignStart="@+id/imageButton3" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

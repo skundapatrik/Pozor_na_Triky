@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="skundapatrik.pozornatriky.Round4">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#52DBFF">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:textColor="#000000"
+                android:id="@+id/score"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logo_round3"
+                android:src="@drawable/logo_round3"
+                android:layout_marginStart="14dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/trophy"
+                android:src="@drawable/trophy"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/score"
+                android:layout_marginEnd="7dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/game_logo"
+                android:id="@+id/game_logo"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Facebook trénink"
+                android:textColor="#000000"
+                android:id="@+id/text_round3"
+                android:layout_alignBaseline="@+id/score"
+                android:layout_alignBottom="@+id/score"
+                android:layout_toEndOf="@+id/logo_round3"
+                android:layout_marginStart="7dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Kolo 4"
+                android:textColor="#000000"
+                android:id="@+id/text_round3S"
+                android:layout_below="@+id/text_round3"
+                android:layout_alignStart="@+id/text_round3" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pozadie_help4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/obr_help4"
+                android:src="@drawable/pozadie_help"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="30dp"
+                android:paddingLeft="280dp"
+                android:paddingRight="60dp"
+                android:paddingTop="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="V tomto kole se ti zobrazí vzor statusu na známé sociální síti. Určitě víš, že v rámci statusu můžeš prozradit mnoho informací o sobě, někdy až příliš. Tvým úkolem je určit, které informace je nebezpečné zveřejňovat."
+                    android:id="@+id/textView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/volbaFbStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/img_round4"
+                android:src="@drawable/round4_fbphotos_cz1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nextto5"
+                android:src="@drawable/next_ic"
+                android:background="@android:color/transparent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <ImageButton
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/q_button"
+                android:paddingLeft="305dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/q4_butt1"
+                android:visibility="visible"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="50dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x4_butt1"
+                android:src="@drawable/x_button"
+                android:layout_alignTop="@+id/q4_butt1"
+                android:layout_alignEnd="@+id/q4_butt1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok4_butt1"
+                android:src="@drawable/ok_button"
+                android:layout_alignTop="@+id/q4_butt1"
+                android:layout_alignEnd="@+id/q4_butt1" />
+
+
+            <ImageButton
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/q_button"
+                android:paddingLeft="305dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/q4_butt2"
+                android:layout_below="@+id/q4_butt1"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="35dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x4_butt2"
+                android:src="@drawable/x_button"
+                android:layout_alignTop="@+id/q4_butt2"
+                android:layout_alignEnd="@+id/q4_butt2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok4_butt2"
+                android:src="@drawable/ok_button"
+                android:layout_alignTop="@+id/x4_butt2"
+                android:layout_alignStart="@+id/x4_butt2" />
+
+            <ImageButton
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/q_button"
+                android:paddingLeft="305dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/q4_butt3"
+                android:layout_below="@+id/q4_butt2"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="17dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x4_butt3"
+                android:src="@drawable/x_button"
+                android:layout_alignTop="@+id/q4_butt3"
+                android:layout_alignEnd="@+id/q4_butt3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok4_butt3"
+                android:src="@drawable/ok_button"
+                android:layout_alignTop="@+id/q4_butt3"
+                android:layout_alignEnd="@+id/q4_butt3" />
+
+            <ImageButton
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/q_button"
+                android:paddingLeft="305dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/q4_butt4"
+                android:layout_below="@+id/q4_butt3"
+                android:layout_alignEnd="@+id/q4_butt3"
+                android:layout_marginTop="17dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x4_butt4"
+                android:src="@drawable/x_button"
+                android:layout_alignTop="@+id/q4_butt4"
+                android:layout_alignEnd="@+id/q4_butt3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok4_butt4"
+                android:src="@drawable/ok_button"
+                android:layout_alignTop="@+id/q4_butt4"
+                android:layout_alignEnd="@+id/q4_butt3" />
+
+            <ImageButton
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/q_button"
+                android:paddingLeft="85dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/q4_butt5"
+                android:layout_marginEnd="19dp"
+                android:layout_alignBottom="@+id/nextto5"
+                android:layout_toStartOf="@+id/nextto5" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x4_butt5"
+                android:src="@drawable/x_button"
+                android:layout_alignTop="@+id/q4_butt5"
+                android:layout_alignEnd="@+id/q4_butt5" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok4_butt5"
+                android:src="@drawable/ok_button"
+                android:layout_alignTop="@+id/x4_butt5"
+                android:layout_alignStart="@+id/x4_butt5" />
+
+            <ImageButton
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/q_button"
+                android:paddingLeft="175dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/q4_butt6"
+                android:layout_centerVertical="true"
+                android:layout_alignEnd="@+id/nextto5" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x4_butt6"
+                android:src="@drawable/x_button"
+                android:layout_alignTop="@+id/q4_butt6"
+                android:layout_alignEnd="@+id/q4_butt6" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok4_butt6"
+                android:src="@drawable/ok_button"
+                android:layout_alignTop="@+id/q4_butt6"
+                android:layout_alignEnd="@+id/q4_butt6" />
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

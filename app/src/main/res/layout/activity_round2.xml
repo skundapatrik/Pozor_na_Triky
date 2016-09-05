@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="skundapatrik.pozornatriky.Round2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#52DBFF">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:textColor="#000000"
+                android:id="@+id/score"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logo_round2"
+                android:src="@drawable/logo_round2"
+                android:layout_marginStart="14dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/trophy"
+                android:src="@drawable/trophy"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/score"
+                android:layout_marginEnd="7dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/game_logo"
+                android:id="@+id/game_logo"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Mail trénink"
+                android:textColor="#000000"
+                android:id="@+id/text_round2"
+                android:layout_alignBaseline="@+id/score"
+                android:layout_alignBottom="@+id/score"
+                android:layout_toEndOf="@+id/logo_round2"
+                android:layout_marginStart="7dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Kolo 2"
+                android:textColor="#000000"
+                android:id="@+id/text_round2S"
+                android:layout_below="@+id/text_round2"
+                android:layout_alignStart="@+id/text_round2" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pozadie_help2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/obr_help2"
+                android:src="@drawable/pozadie_help"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="30dp"
+                android:paddingLeft="280dp"
+                android:paddingRight="60dp"
+                android:paddingTop="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Právě se nacházíš ve druhém kole. Zde tě čeká mail a tvým úkolem je pozorně si prohlédnout řádky při kterém jsou otazníky. Je na tobě vyhodnotit, které části mailu jsou podezřelé a které ne."
+                    android:id="@+id/textView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/volbaEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_round2"
+                android:src="@drawable/round2_mail_cz1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="365dp"
+                android:src="@drawable/q_button"
+                android:background="@android:color/transparent"
+                android:id="@+id/question1"
+                android:layout_marginTop="19dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="167dp" />
+
+
+            <ImageButton
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/q_button"
+                android:paddingLeft="365dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/question2"
+                android:layout_marginTop="31dp"
+                android:layout_below="@+id/question1"
+                android:layout_alignStart="@+id/question1" />
+
+
+            <ImageButton
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/q_button"
+                android:paddingLeft="365dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/question3"
+                android:layout_marginTop="70dp"
+                android:layout_below="@+id/question2"
+                android:layout_alignStart="@+id/question2" />
+
+            <ImageButton
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/q_button"
+                android:paddingLeft="365dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/question4"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/question3"
+                android:layout_alignStart="@+id/question3" />
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok_butt1"
+                android:src="@drawable/ok_button"
+                android:layout_alignTop="@+id/question1"
+                android:layout_alignEnd="@+id/question1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x_butt1"
+                android:src="@drawable/x_button"
+                android:layout_alignTop="@+id/question1"
+                android:layout_alignEnd="@+id/question1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok_butt2"
+                android:src="@drawable/ok_button"
+                android:layout_alignTop="@+id/question2"
+                android:layout_alignStart="@+id/x_butt2" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x_butt2"
+                android:src="@drawable/x_button"
+                android:layout_alignTop="@+id/question2"
+                android:layout_alignEnd="@+id/question2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok_butt3"
+                android:src="@drawable/ok_button"
+                android:layout_alignTop="@+id/question3"
+                android:layout_alignEnd="@+id/question3" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x_butt3"
+                android:src="@drawable/x_button"
+                android:layout_alignTop="@+id/question3"
+                android:layout_alignStart="@+id/ok_butt3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok_butt4"
+                android:src="@drawable/ok_button"
+                android:layout_alignTop="@+id/question4"
+                android:layout_alignStart="@+id/x_butt4" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x_butt4"
+                android:src="@drawable/x_button"
+                android:layout_alignTop="@+id/question4"
+                android:layout_alignEnd="@+id/question4" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nextto3"
+                android:src="@drawable/next_ic"
+                android:background="@android:color/transparent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp" />
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

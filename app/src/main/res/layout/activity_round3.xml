@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="skundapatrik.pozornatriky.Round3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#52DBFF">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:textColor="#000000"
+                android:id="@+id/score"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logo_round3"
+                android:src="@drawable/logo_round3"
+                android:layout_marginStart="14dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/trophy"
+                android:src="@drawable/trophy"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/score"
+                android:layout_marginEnd="7dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/game_logo"
+                android:id="@+id/game_logo"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Facebook trénink"
+                android:textColor="#000000"
+                android:id="@+id/text_round3"
+                android:layout_alignBaseline="@+id/score"
+                android:layout_alignBottom="@+id/score"
+                android:layout_toEndOf="@+id/logo_round3"
+                android:layout_marginStart="7dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Kolo 3 "
+                android:textColor="#000000"
+                android:id="@+id/text_round3S"
+                android:layout_below="@+id/text_round3"
+                android:layout_alignStart="@+id/text_round3" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pozadie_help3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/obr_help3"
+                android:src="@drawable/pozadie_help"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="30dp"
+                android:paddingLeft="280dp"
+                android:paddingRight="60dp"
+                android:paddingTop="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Toto kolo prověří tvou schopnost rozeznat možné riziko na známé sociální síti. Uvidíš tři žádosti o přátelství od tří různých uživatelů. Pozorně si prohlédni informace o žadatelích a rozhodni se u každého žadatele zda je bezpečné přijmout jeho žádost."
+                    android:id="@+id/textView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/volbafbfriend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/img_round3"
+                android:src="@drawable/round3_cz1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb_odstr_zadost_cz"
+                android:background="@android:color/transparent"
+                android:id="@+id/odstranit1"
+                android:layout_marginEnd="61dp"
+                android:layout_marginTop="85dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb_potvrdit_cz"
+                android:background="@android:color/transparent"
+                android:id="@+id/potvrdit1"
+                android:layout_marginEnd="5dp"
+                android:layout_alignTop="@+id/odstranit1"
+                android:layout_toStartOf="@+id/odstranit1" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb_potvrdit_cz"
+                android:background="@android:color/transparent"
+                android:id="@+id/potvrdit3"
+                android:layout_alignTop="@+id/odstranit3"
+                android:layout_toStartOf="@+id/odstranit3"
+                android:layout_marginEnd="5dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb_odstr_zadost_cz"
+                android:background="@android:color/transparent"
+                android:id="@+id/odstranit3"
+                android:layout_below="@+id/odstranit2"
+                android:layout_alignStart="@+id/odstranit2"
+                android:layout_marginTop="47dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb_potvrdit_cz"
+                android:background="@android:color/transparent"
+                android:id="@+id/potvrdit2"
+                android:layout_marginEnd="5dp"
+                android:layout_alignTop="@+id/odstranit2"
+                android:layout_toStartOf="@+id/odstranit2" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb_odstr_zadost_cz"
+                android:background="@android:color/transparent"
+                android:id="@+id/odstranit2"
+                android:layout_marginTop="47dp"
+                android:layout_below="@+id/odstranit1"
+                android:layout_alignStart="@+id/odstranit1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok3_butt1"
+                android:src="@drawable/ok_button"
+                android:visibility="visible"
+                android:layout_alignTop="@+id/x3_butt1"
+                android:layout_toEndOf="@+id/odstranit2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok3_butt2"
+                android:src="@drawable/ok_button"
+                android:visibility="visible"
+                android:layout_alignBottom="@+id/odstranit2"
+                android:layout_toEndOf="@+id/odstranit2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok3_butt3"
+                android:src="@drawable/ok_button"
+                android:visibility="visible"
+                android:layout_alignTop="@+id/x3_butt3"
+                android:layout_toEndOf="@+id/odstranit3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x3_butt1"
+                android:src="@drawable/x_button"
+                android:visibility="visible"
+                android:layout_alignBottom="@+id/odstranit1"
+                android:layout_alignStart="@+id/ok3_butt1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x3_butt2"
+                android:src="@drawable/x_button"
+                android:visibility="visible"
+                android:layout_alignBottom="@+id/odstranit2"
+                android:layout_toEndOf="@+id/odstranit2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x3_butt3"
+                android:src="@drawable/x_button"
+                android:visibility="visible"
+                android:layout_alignBottom="@+id/odstranit3"
+                android:layout_toEndOf="@+id/odstranit3" />
+
+            <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nextto4"
+            android:src="@drawable/next_ic"
+            android:background="@android:color/transparent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
